@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Validation</title>
+</head>
+
+<body>
+    <form action="/" method="GET"  id="form1" novalidate>
+        <h1 style="text-align: center;">FORM VALIDATION</h1>
+        <div class="form-body">
+            <div>
+                <label for="userName">Kullanıcı Adı :</label>
+                <input id="userinput" type="text" placeholder="Kullanıcı Adı" required>
+            </div>
+            <div id="usernameErrors" class="errors"></div>
+            <div>
+                <label for="password">Parola :</label>
+                <input id="passinput" type="password" placeholder="Şifre" required>
+            </div>
+            <div id="passwordErrors" class="errors"></div>
+            <div>
+                <label for="eMail">E-Mail :</label>
+                <input id="emailinput" type="email" placeholder="E-mail" required>
+            </div>
+            <div id="emailErrors" class="errors"></div>
+            <div>
+                <label for=checkbox class="labelforcheckbox"> Okudum, anladım. </label>
+                <input id="checkboxinput" type="checkbox" class="checkbox" required>
+            </div>
+            <div id="checkboxErrors" class="errors"></div>
+            <div>
+                <button type="submit" class="button">Gönder</button>
+            </div>
+        </div>
+    </form>
+    <script src="index.js"></script>
+</body>
+
+</html>

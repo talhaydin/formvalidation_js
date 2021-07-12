@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #9b59b6;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    font-family: 'Open Sans', sans-serif;
+    background: white;
+    padding: 20px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(0 0 0 / 30%);
+}
+
+form>h1 {
+    border-bottom: 2px solid gray;
+    padding-bottom: 10px;
+}
+
+.form-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.form-body>div {
+    margin-top: 10px;
+}
+
+.form-body div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-body div label {
+    margin-left: 10px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+form>div>div:nth-child(4) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+}
+
+form>div>div:nth-child(5) button {
+    width: 30%;
+    background-color: green;
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    box-shadow: 5px 5px 10px #000;
+}
+
+form>div>div:nth-child(6) button:hover {
+    background-color: rgb(4, 146, 4);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    outline: none;
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: 1px solid gray;
+    font-size: 20px;
+}
+
+::placeholder {
+    font-size: 14px;
+    color: gray;
+}
+
+.errors {
+    font-size: 12px;
+    color: orangered;
+    display: block;
+    padding-top: 5px;
+}
+
+.button{
+    background-color: #8e44ad;
+    border: 2px solid #8e44ad;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.checkbox{
+    background-color:purple;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.labelforcheckbox{
+    text-align: center;
+    margin-right: 25px;
+}
+
